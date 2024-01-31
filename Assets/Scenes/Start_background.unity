@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 46675025}
   - component: {fileID: 46675024}
   m_Layer: 0
-  m_Name: fruit_ninja-hero
+  m_Name: background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -201,8 +201,8 @@ Transform:
   m_GameObject: {fileID: 46675023}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.54, y: 1.15, z: 5.9848824}
-  m_LocalScale: {x: 4.79, y: 4.79, z: 4.79}
+  m_LocalPosition: {x: 1.16, y: 1.03, z: 5.9848824}
+  m_LocalScale: {x: 2.04, y: 2.04, z: 2.04}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -217,15 +217,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: db62e5ef98b18814b9ae342bf3a11eae, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: db62e5ef98b18814b9ae342bf3a11eae, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: db62e5ef98b18814b9ae342bf3a11eae, type: 3}
       propertyPath: m_LocalScale.z
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: db62e5ef98b18814b9ae342bf3a11eae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -433,9 +433,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  field of view: 57.5
+  orthographic: 1
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -460,7 +460,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
