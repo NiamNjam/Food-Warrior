@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Food : MonoBehaviour
 {
-    Rigidbody2D rb; 
+    Rigidbody2D rb;
+    public GameObject pear;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(0, 10);
+        InvokeRepeating("SpawnFruit", 2f, 2f);
     }
 
     void Update()
@@ -19,5 +21,11 @@ public class Food : MonoBehaviour
             print("fail");
             Destroy(gameObject);
         }
+    }
+
+    void SpawnFruit()
+    {
+        int fruitpos = Random.Range(-5, 5);
+        Instantiate(pear, new Vector3(fruitpos, -5, 0), Quaternion.identity);
     }
 }
