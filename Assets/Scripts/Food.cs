@@ -5,7 +5,7 @@ using UnityEngine;
 public class Food : MonoBehaviour
 {
     Rigidbody2D rb;
-    
+    public GameObject explodeParticles;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +19,20 @@ public class Food : MonoBehaviour
     {
         if (transform.position.y < -6)
         {
-            print("fail");
-            Destroy(gameObject);
+            Miss();
         }
     }
 
+    void Miss()
+    {
+        print("fail");
+        Destroy(gameObject);
+    }
+    public void Slice()
+    {
+        var particles = Instantiate(explodeParticles);
+        particles.transform.position = transform.position;
+        Destroy(gameObject);
+    }
     
 }
