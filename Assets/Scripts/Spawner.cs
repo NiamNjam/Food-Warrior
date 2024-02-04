@@ -4,24 +4,28 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject pear;
+    public float spawnSpeed = 1f;
+    public int bombChance = 20;
+    public GameObject fruitPrefab;
+    public GameObject bomb;
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnFruit", 2f, 2f);
+        InvokeRepeating("SpawnFruit", 0f, spawnSpeed);
     }
     void Update()
     {
         if (transform.position.y < -6)
         {
             print("fail");
-            Destroy(pear);
+            Destroy(fruitPrefab);
         }
     }
 
     void SpawnFruit()
     {
+        var prefab = Random.Range(0, 100) > bombChance ? fruitPrefab : bomb;
         int fruitpos = Random.Range(-5, 5);
-        Instantiate(pear, new Vector3(fruitpos, -5, 0), Quaternion.identity);
+        Instantiate(prefab, new Vector3(fruitpos, -5, 0), Quaternion.identity);
     }
 }
