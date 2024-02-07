@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87420b2aadeadd64696b0b9aa208d42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explodeParticles: {fileID: 1668855328315262305, guid: bd65b3d20d42e154486c720deddf30ae, type: 3}
+  explodeParticles: {fileID: 443512130987295486, guid: d53687d2d4f65944b8ed6751d3d072b6, type: 3}
 --- !u!58 &5303719293566598688
 CircleCollider2D:
   m_ObjectHideFlags: 0
