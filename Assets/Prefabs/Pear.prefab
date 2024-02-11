@@ -84,6 +84,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explodeParticles: {fileID: 1668855328315262305, guid: bd65b3d20d42e154486c720deddf30ae, type: 3}
+  leftSlice: {fileID: 1173367513050884729}
+  rightSlice: {fileID: 1516816924070809384}
+  juiceColor: {r: 0.37068352, g: 0.6603774, b: 0.596848, a: 1}
+  throwSound: {fileID: 8300000, guid: 66d60676357b075419ae6f1a7457807e, type: 3}
+  sliceSound: {fileID: 8300000, guid: faf32607316e4cc4d8c944f12416772f, type: 3}
 --- !u!50 &8918603365084098825
 Rigidbody2D:
   serializedVersion: 4
@@ -184,6 +189,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db62e5ef98b18814b9ae342bf3a11eae, type: 3}
+--- !u!1 &1516816924070809384 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: db62e5ef98b18814b9ae342bf3a11eae, type: 3}
+  m_PrefabInstance: {fileID: 1859345791224099449}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2181712923082806674 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: db62e5ef98b18814b9ae342bf3a11eae, type: 3}
@@ -262,6 +272,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db62e5ef98b18814b9ae342bf3a11eae, type: 3}
+--- !u!1 &1173367513050884729 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: db62e5ef98b18814b9ae342bf3a11eae, type: 3}
+  m_PrefabInstance: {fileID: 2056397187036518184}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1946526070275698883 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: db62e5ef98b18814b9ae342bf3a11eae, type: 3}
